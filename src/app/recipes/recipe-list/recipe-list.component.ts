@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class RecipeListComponent {
 
+  recipes: Recipe[] = [
+    new Recipe("Butterchicken", "Lecker Lecker", "https://www.einfachmalene.de/wp-content/uploads/2022/09/Butter-Chicken-13.jpg")
+  ];
 }
